@@ -1,0 +1,103 @@
+### Differences Between Inline, Internal, and External CSS
+
+**1. Inline CSS**
+- **Definition**: Inline CSS applies styles directly to individual HTML elements using the `style` attribute.
+- **Example**:
+  ```html
+  <h1 style="color: red; font-size: 30px;">Inline CSS Example</h1>
+  ```
+- **Advantages**:
+  - Quick and easy to apply styles to a specific element.
+  - Useful for overriding styles defined elsewhere.
+  
+- **Disadvantages**:
+  - Reduces code maintainability since styles are mixed with HTML.
+  - Not reusable; if multiple elements require the same style, you need to repeat it.
+
+**2. Internal CSS**
+- **Definition**: Internal CSS is defined within a `<style>` tag in the `<head>` section of an HTML document. It applies to the entire document.
+- **Example**:
+  ```html
+  <style>
+      h2 {
+          color: blue;
+          font-size: 28px;
+      }
+  </style>
+  ```
+- **Advantages**:
+  - Keeps styles within the same HTML file, making it easier to manage styles for that specific document.
+  - Can style multiple elements without repetition.
+
+- **Disadvantages**:
+  - Styles are not reusable across multiple pages, making it less efficient for larger websites.
+  - Increases the size of the HTML document, which can slow down loading times.
+
+**3. External CSS**
+- **Definition**: External CSS is stored in a separate `.css` file, which is linked to the HTML document using a `<link>` tag in the `<head>`.
+- **Example**:
+  ```html
+  <link rel="stylesheet" href="styles.css">
+  ```
+
+  *`styles.css` content:*
+  ```css
+  p {
+      color: green;
+      font-size: 20px;
+  }
+  ```
+- **Advantages**:
+  - Keeps HTML files clean and easy to read.
+  - Styles can be reused across multiple HTML documents, promoting consistency.
+  - Easier to maintain and update; changes made in the CSS file automatically apply to all linked HTML pages.
+
+- **Disadvantages**:
+  - Requires an additional HTTP request to load the CSS file, which can slow down page loading initially.
+  - If the CSS file is missing or incorrectly linked, styles won't be applied.
+
+### HTML Page Demonstrating All Three Methods
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Methods Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS Link -->
+    <style>
+        h2 {
+            color: blue; /* Internal CSS */
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red; font-size: 30px;">Inline CSS Example</h1> <!-- Inline CSS -->
+    
+    <h2>Internal CSS Example</h2>
+    
+    <p>This paragraph will be styled using <strong>External CSS</strong>.</p> <!-- This will use styles from styles.css -->
+</body>
+</html>
+```
+
+### Explanation of the HTML Page
+
+1. **Inline CSS**:
+   - The `<h1>` element uses inline CSS to set its color to red and font size to 30 pixels. This style is applied directly to the element.
+
+2. **Internal CSS**:
+   - The `<h2>` element styles are defined within the `<style>` tag in the `<head>` section. It sets the color to blue and font size to 28 pixels for all `<h2>` elements in this document.
+
+3. **External CSS**:
+   - The `<link>` tag references an external CSS file (`styles.css`). The `<p>` element will inherit styles from this external file, which might set its color to green and font size to 20 pixels, depending on the content of `styles.css`.
+
+### Summary
+
+- **Inline CSS** is quick for single elements but hard to maintain.
+- **Internal CSS** is useful for single documents but not reusable.
+- **External CSS** is the most efficient for larger projects, allowing for easy maintenance and reuse, but requires a separate file. 
+
+Choosing the right method depends on the specific needs of the project, but external CSS is generally preferred for larger applications.

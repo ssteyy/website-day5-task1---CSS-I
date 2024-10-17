@@ -1,0 +1,16 @@
+- ChatGPT
+
+**Text and Font**
+   - **Text Styling**: Properties like `font-family`, `font-size`, `font-weight`, and `text-align`.
+   - **Example**: Using these properties to style headings, paragraphs, and links in an HTML document.
+
+- Gemini
+
+Styling Text and Fonts
+CSS provides various properties for text styling, including:
+
+    - Font Family: font-family: Arial, sans-serif;
+    - Font Size: font-size: 24px;
+    - Font Weight: font-weight: bold;
+    - Text Align: text-align: center;
+    - Other Properties: color, text-decoration, line-height, etc.

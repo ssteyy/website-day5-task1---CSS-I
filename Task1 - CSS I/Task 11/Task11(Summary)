@@ -1,0 +1,14 @@
+- ChatGPT
+
+**Tables and `<div>` Elements**
+   - **Tables**: Useful for displaying tabular data.
+   - **`<div>` Elements**: Versatile for layout purposes and structure.
+   - **When to Use**: Tables are for data representation; `<div>` elements are for layout and structure.
+
+- Gemini
+
+Tables vs. <div> for Layout
+Tables
+    - Originally for tabular data; can be misused for layout, making maintenance challenging.
+<div> Elements
+    - More flexible and maintainable for layouts.

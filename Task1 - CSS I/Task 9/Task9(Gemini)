@@ -1,0 +1,71 @@
+## Alignment and Display in CSS
+
+### Text Alignment
+* **`text-align`:** This property sets the horizontal alignment of the text within an element.
+  - **`left`:** Aligns text to the left.
+  - **`center`:** Centers the text.
+  - **`right`:** Aligns text to the right.
+  - **`justify`:** Justifies the text, spreading it out to fill the entire width of the container.
+
+### Vertical Alignment
+* **`vertical-align`:** This property sets the vertical alignment of an inline element within its parent element.
+  - **`top`:** Aligns the element to the top of its parent.
+  - **`middle`:** Centers the element vertically within its parent.
+  - **`bottom`:** Aligns the element to the bottom of its parent.
+
+### Display Property
+* **`display`:** This property controls how an element is displayed.
+  - **`block`:** Elements are displayed as blocks, taking up the full width of their parent container and starting on a new line.
+  - **`inline`:** Elements are displayed inline, without starting on a new line.
+  - **`inline-block`:** Elements are displayed as blocks but without starting on a new line.
+  - **`flex`:** Enables flexible box layout, allowing elements to be arranged and sized in a more dynamic way.
+
+### Example HTML and CSS
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alignment and Display</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .vertical-middle {
+            vertical-align: middle;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            flex: 1;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">This text is centered.</div>
+
+    <div>
+        <span class="vertical-middle">This text is vertically aligned.</span>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html>
+```
+
+### Explanation
+* The first div demonstrates text alignment using the `text-align` property.
+* The second div demonstrates vertical alignment using the `vertical-align` property within a span element.
+* The third div uses the `display: flex` property to create a flexible container. The `justify-content: space-between` property distributes the items evenly within the container. The `flex: 1` property allows the items to expand to fill the available space.
+
+By understanding these concepts and using the appropriate CSS properties, you can effectively align elements and create dynamic layouts for your web pages.

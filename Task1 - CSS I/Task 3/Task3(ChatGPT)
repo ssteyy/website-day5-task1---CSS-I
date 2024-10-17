@@ -1,0 +1,89 @@
+### CSS Selectors
+
+**CSS selectors** are patterns used to select the elements you want to style in an HTML document. They allow you to target specific elements based on their type, class, ID, attributes, and state (like hover effects). Understanding selectors is crucial for applying styles effectively to the desired elements.
+
+### Types of CSS Selectors
+
+1. **Element Selector**: Targets elements by their tag name.
+2. **Class Selector**: Targets elements with a specific class attribute, prefixed with a period (`.`).
+3. **ID Selector**: Targets an element with a specific ID, prefixed with a hash (`#`).
+4. **Attribute Selector**: Targets elements based on the presence or value of an attribute.
+5. **Pseudo-classes**: Targets elements based on their state, such as `:hover` or `:first-child`.
+
+### Example HTML Document with Various Selectors
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Element Selector */
+        h1 {
+            color: darkblue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #main {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        /* Attribute Selector */
+        a[target="_blank"] {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Pseudo-class */
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Example</h1>
+    <div id="main">
+        <p class="highlight">This paragraph has a highlight class applied to it.</p>
+        <p>This is a normal paragraph.</p>
+        <a href="https://example.com" target="_blank">Link that opens in a new tab</a>
+    </div>
+    <p class="highlight">Another highlighted paragraph.</p>
+</body>
+</html>
+```
+
+### Explanation of Selectors Used
+
+1. **Element Selector (`h1`)**:
+   - **CSS Rule**: `h1 { color: darkblue; }`
+   - **Targets**: All `<h1>` elements in the document will have their text color set to dark blue.
+
+2. **Class Selector (`.highlight`)**:
+   - **CSS Rule**: `.highlight { background-color: yellow; }`
+   - **Targets**: Any element with the class `highlight` will have a yellow background. In this example, two paragraphs use this class.
+
+3. **ID Selector (`#main`)**:
+   - **CSS Rule**: `#main { border: 2px solid black; padding: 10px; }`
+   - **Targets**: The element with the ID `main` (the `<div>`) will have a solid black border and padding around its content.
+
+4. **Attribute Selector (`a[target="_blank"]`)**:
+   - **CSS Rule**: `a[target="_blank"] { color: green; font-weight: bold; }`
+   - **Targets**: This rule applies to any `<a>` element with a `target` attribute set to `_blank`. The link in the example will be styled with green text and bold font.
+
+5. **Pseudo-class Selector (`a:hover`)**:
+   - **CSS Rule**: `a:hover { text-decoration: underline; color: red; }`
+   - **Targets**: This rule applies to `<a>` elements when the user hovers over them. The link will be underlined and change color to red when hovered.
+
+### Summary
+
+CSS selectors allow you to target specific elements in your HTML document for styling. By using different types of selectors, you can apply styles selectively based on element type, class, ID, attributes, and user interactions. This flexibility is key to creating well-structured and visually appealing web pages.

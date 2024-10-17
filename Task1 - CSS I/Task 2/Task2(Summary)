@@ -1,0 +1,13 @@
+- ChatGPT
+
+**Inline, Internal, and External CSS**
+   - **Inline CSS**: Styles applied directly to HTML elements using the `style` attribute.
+   - **Internal CSS**: Styles defined within a `<style>` tag in the HTML document's `<head>`.
+   - **External CSS**: Styles written in separate CSS files linked to the HTML document.
+   - **Advantages/Disadvantages**: Inline is easy for quick changes but not maintainable. Internal is suitable for single-page styles, while external promotes separation of concerns and reusability.
+
+- Gemini
+
+    - Inline CSS: Styles applied directly within HTML tags using the style attribute.
+    - Internal CSS: Styles defined in the <head> section using the <style> tag.
+    - External CSS: Styles are kept in a separate .css file linked in the HTML document.

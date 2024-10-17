@@ -1,0 +1,10 @@
+- ChatGPT
+
+**Style on HTML**
+   - **Inline Styles**: Styles applied directly within HTML elements using the `style` attribute.
+   - **Pros/Cons**: Inline styles provide quick application but reduce maintainability compared to using external stylesheets.
+
+- Gemini
+
+Debugging CSS
+Common issues include conflicting styles, specificity problems, and layout issues. Use browser developer tools to inspect elements, identify problems, and test changes live.

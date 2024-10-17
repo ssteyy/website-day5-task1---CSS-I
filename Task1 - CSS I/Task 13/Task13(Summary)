@@ -1,0 +1,14 @@
+- ChatGPT
+
+**CSS Variables (Custom Properties)**
+   - **Definition**: Custom properties defined with `--variable-name` syntax for reuse.
+   - **Benefits**: Promote consistency and easier maintenance.
+   - **Dynamic Changes**: Can be updated in real-time, affecting styles dynamically.
+
+- Gemini
+
+CSS Variables (Custom Properties)
+Syntax
+    - Defined with -- prefix (e.g., --primary-color).
+Usage
+    - Referenced with var() function to apply values.

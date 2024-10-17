@@ -1,0 +1,65 @@
+### CSS Basics
+
+**CSS (Cascading Style Sheets)** is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS is responsible for the visual aspects of a webpage, such as layout, colors, fonts, and spacing. It helps separate the content (HTML) from the visual design, making it easier to maintain and update the appearance of the site without affecting the underlying structure.
+
+### Role of CSS in Web Development
+- **Design & Layout**: CSS allows web developers to style HTML elements with colors, layouts, and fonts.
+- **Responsive Design**: It helps in creating responsive websites that look good on all devices (mobile, tablet, desktop).
+- **Maintainability**: By keeping styling separate from content, developers can easily update the look of the website without touching the HTML structure.
+
+### Simple HTML Document with CSS
+
+#### 1. HTML Code
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a simple webpage styled with CSS.</p>
+</body>
+</html>
+```
+
+#### 2. CSS Code (`styles.css`)
+```css
+/* This changes the background color of the entire webpage */
+body {
+    background-color: lightblue;
+}
+
+/* This changes the text color and font size of the h1 (heading) element */
+h1 {
+    color: darkblue;
+    font-size: 36px;
+}
+
+/* This changes the text color and font size of paragraph (p) elements */
+p {
+    color: black;
+    font-size: 18px;
+}
+```
+
+### Explanation of CSS Code
+
+1. **body { background-color: lightblue; }**  
+   - This rule targets the `<body>` element, which contains all the content of the page.  
+   - `background-color: lightblue;`: This sets the background color of the entire webpage to light blue.
+
+2. **h1 { color: darkblue; font-size: 36px; }**  
+   - This rule applies to all `<h1>` elements, which are typically used for the main heading on a page.  
+   - `color: darkblue;`: Changes the text color of the heading to dark blue.  
+   - `font-size: 36px;`: Sets the font size of the heading text to 36 pixels, making it larger and more prominent.
+
+3. **p { color: black; font-size: 18px; }**  
+   - This rule applies to all `<p>` elements, which represent paragraphs of text.  
+   - `color: black;`: Changes the text color of the paragraphs to black.  
+   - `font-size: 18px;`: Sets the font size of the paragraph text to 18 pixels, making it easily readable.
+
+In this example, the CSS file `styles.css` is linked to the HTML document using the `<link>` tag in the `<head>` section. This keeps the styling separate from the HTML structure, which makes it easier to maintain both.

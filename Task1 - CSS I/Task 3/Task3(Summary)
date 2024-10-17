@@ -1,0 +1,16 @@
+- ChatGPT
+
+**CSS Selectors**
+   - **Definition**: CSS selectors are patterns used to select elements to apply styles.
+   - **Types**: Element selectors, class selectors, ID selectors, attribute selectors, and pseudo-classes.
+   - **Example**: Applying different styles to various selectors in an HTML document.
+
+- Gemini
+
+CSS selectors target specific HTML elements for styling:
+
+    - Element Selector: e.g., h1
+    - Class Selector: e.g., .special
+    - ID Selector: e.g., #myElement
+    - Attribute Selector: e.g., [href]
+    - Pseudo-class Selector: e.g., a:hover

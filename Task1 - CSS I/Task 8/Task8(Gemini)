@@ -1,0 +1,70 @@
+## Applying Colors and Backgrounds in CSS
+
+### Colors
+
+CSS offers several ways to specify colors:
+
+* **Hex Code:** Represents colors using a combination of six hexadecimal digits (e.g., `#FF0000` for red).
+* **RGB:** Represents colors using three values for Red, Green, and Blue, ranging from 0 to 255 (e.g., `rgb(255, 0, 0)` for red).
+* **HSL:** Represents colors using Hue, Saturation, and Lightness (e.g., `hsl(0, 100%, 50%)` for red).
+
+### Backgrounds
+
+CSS provides various properties to set the background of an element:
+
+* **`background-color`:** Sets the background color.
+* **`background-image`:** Sets a background image.
+* **`background-repeat`:** Controls how the background image is repeated.
+* **`background-position`:** Specifies the position of the background image.
+* **`background-size`:** Sets the size of the background image.
+
+### Example: HTML Structure and CSS Styles
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colors and Backgrounds</title>
+    <style>
+        .hex-color {
+            background-color: #FF0000;
+        }
+
+        .rgb-color {
+            background-color: rgb(0, 128, 0);
+        }
+
+        .hsl-color {
+            background-color: hsl(240, 100%, 50%);
+        }
+
+        .gradient-background {
+            background-image: linear-gradient(to right, #f06b6b, #ffb6b6);
+        }
+
+        .image-background {
+            background-image: url("your-image.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hex-color">Hex Color</div>
+    <div class="rgb-color">RGB Color</div>
+    <div class="hsl-color">HSL Color</div>
+    <div class="gradient-background">Gradient Background</div>
+    <div class="image-background">Image Background</div>
+</body>
+</html>
+```
+
+### Explanation
+
+* **Hex Color:** The `.hex-color` div has a red background using the hex code `#FF0000`.
+* **RGB Color:** The `.rgb-color` div has a green background using RGB values `(0, 128, 0)`.
+* **HSL Color:** The `.hsl-color` div has a blue background using HSL values `(240, 100%, 50%)`.
+* **Gradient Background:** The `.gradient-background` div has a linear gradient background from red to pink.
+* **Image Background:** The `.image-background` div uses an image as the background, with the `background-size: cover` property to scale the image to fit the container and the `background-position: center center` property to center the image.
+
+By combining these techniques, you can create a wide range of visually appealing color and background effects for your web pages.

@@ -1,0 +1,101 @@
+## Inline, Internal, and External CSS
+
+### Inline CSS
+* **Definition:** CSS rules are defined within the HTML element itself, using the `style` attribute.
+* **Example:**
+  ```html
+  <h1 style="color: red; font-size: 36px;">Hello, World!</h1>
+  ```
+* **Advantages:**
+  - Quick and easy to implement for one-off styling changes.
+* **Disadvantages:**
+  - Poor maintainability: Styles are hard to manage and reuse across multiple elements.
+  - Separation of concerns is violated, making the HTML code less readable and maintainable.
+
+### Internal CSS
+* **Definition:** CSS rules are defined within the `<head>` section of an HTML document using the `<style>` tag.
+* **Example:**
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Internal CSS</title>
+      <style>
+          h1 {
+              color: blue;
+              font-size: 24px;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Hello, World!</h1>
+  </body>
+  </html>
+  ```
+* **Advantages:**
+  - Improves maintainability compared to inline CSS.
+  - Styles can be reused within the same HTML document.
+* **Disadvantages:**
+  - Not suitable for large-scale projects or sharing styles across multiple pages.
+  - Still violates separation of concerns to some extent.
+
+### External CSS
+* **Definition:** CSS rules are defined in a separate `.css` file and linked to the HTML document using the `<link>` tag.
+* **Example:**
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>External CSS</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <h1>Hello, World!</h1>
+  </body>
+  </html>
+  ```
+  **styles.css:**
+  ```css
+  h1 {
+      color: green;
+      font-size: 20px;
+  }
+  ```
+* **Advantages:**
+  - Best practice for large-scale projects and maintaining separation of concerns.
+  - Styles can be reused across multiple HTML pages.
+  - Improves code organization and readability.
+* **Disadvantages:**
+  - Requires an additional HTTP request to load the CSS file, potentially slowing down page load time (though modern browsers often cache CSS files).
+
+### Demonstrating All Three Methods
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Methods</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h2 {
+            color: purple;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red; font-size: 36px;">Inline CSS</h1>
+    <h2>Internal CSS</h2>
+    <h1>External CSS</h1>
+</body>
+</html>
+```
+
+**styles.css:**
+```css
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+```
+
+This example demonstrates all three CSS methods applied to the same HTML elements. You can observe the differences in styling and the impact of each method on the code structure.

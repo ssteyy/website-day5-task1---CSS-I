@@ -1,0 +1,20 @@
+- ChatGPT
+
+**Color and Background**
+   - **Applying Colors**: Use HEX, RGB, or HSL to set colors.
+   - **Background Properties**: Set solid colors, gradients, or images as backgrounds.
+   - **Example**: Demonstrating different color and background styles in an HTML document.
+
+- Gemini
+
+Applying Colors and Backgrounds in CSS
+Colors
+    - Hex Code: A six-digit code representing colors (e.g., #FF0000 for red).
+    - RGB: Uses three values for Red, Green, and Blue (e.g., rgb(255, 0, 0)).
+    - HSL: Specifies colors using Hue, Saturation, and Lightness (e.g., hsl(0, 100%, 50%)).
+Backgrounds
+    - background-color: Sets the background color.
+    - background-image: Sets a background image.
+    - background-repeat: Controls how the background image repeats.
+    - background-position: Specifies the position of the background image.
+    - background-size: Sets the size of the background image.

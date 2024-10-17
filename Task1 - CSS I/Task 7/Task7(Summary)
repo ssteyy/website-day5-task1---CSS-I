@@ -1,0 +1,12 @@
+- ChatGPT
+
+**Online Fonts and Favicon**
+   - **Online Fonts**: Fonts that can be integrated using services like Google Fonts.
+   - **Favicon**: A small icon representing the website in browser tabs.
+   - **Implementation**: How to link Google Fonts and add a favicon using HTML.
+
+- Gemini
+
+Online Fonts and Favicons
+    - Online Fonts: Access fonts from services like Google Fonts to enhance typography.
+    - Favicons: Small icons that represent a website in browser tabs. Include using: <link rel="shortcut icon" href="favicon.ico">

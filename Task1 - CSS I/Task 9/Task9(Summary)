@@ -1,0 +1,15 @@
+- ChatGPT
+
+Alignment and Display
+    - Aligning Elements: Techniques for aligning text and elements using properties like text-align, vertical-align, and different display types (block, inline, inline-block, flex).
+    - Example: Showcasing various alignment techniques in an HTML document.
+
+- Gemini
+
+Alignment and Display in CSS
+Text Alignment
+    - text-align: Controls the horizontal alignment of text (left, center, right, justify).
+Vertical Alignment
+    - vertical-align: Sets vertical alignment of inline elements (top, middle, bottom).
+Display Property
+    - display: Determines how an element is displayed (block, inline, inline-block, flex).

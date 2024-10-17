@@ -1,0 +1,14 @@
+- ChatGPT
+
+**CSS Basics**
+   - **Definition**: CSS (Cascading Style Sheets) is used to style and layout web pages.
+   - **Roles**: It controls the presentation of HTML elements, such as colors, fonts, and spacing.
+   - **Example**: Creating a simple HTML document with a basic CSS stylesheet to change background color, text color, and font size.
+
+- Gemini
+
+The Role of CSS in Web Development
+    - Separation of Concerns: Keeps HTML structure separate from styling.
+    - Consistent Styling: Allows uniform styles across multiple pages.
+    - Responsive Design: Facilitates designs that adapt to different screen sizes.
+    - Customization: Provides extensive options for unique designs.

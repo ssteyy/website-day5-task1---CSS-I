@@ -1,0 +1,18 @@
+- ChatGPT
+
+**Flexbox**
+   - **Definition**: A CSS layout model for efficient arrangement of items in a container.
+   - **Key Properties**: `flex-direction`, `justify-content`, and `align-items`.
+   - **Example**: Creating a responsive layout using Flexbox and demonstrating its properties.
+
+- Gemini
+
+Flexbox: A Powerful Layout System
+Key Concepts
+    - Flex Container and Items: Parent-child relationship defining layout.
+    - Flex Axis and Cross Axis: Main and perpendicular directions of item arrangement.
+Properties
+    - display: flex;: Activates flexbox layout.
+    - flex-direction: Arranges items (row, column).
+    - justify-content: Aligns items along the main axis.
+    - align-items: Aligns items along the cross axis.

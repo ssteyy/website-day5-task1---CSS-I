@@ -1,0 +1,14 @@
+- ChatGPT
+
+**Box Model**
+   - **Definition**: The CSS box model consists of content, padding, border, and margin.
+   - **Example**: Styling an HTML layout using the box model and demonstrating how changing padding, margin, and border affects layout and spacing.
+
+- Gemini
+
+The CSS Box Model
+Components
+    - Content: The actual content area.
+    - Padding: Space between content and border.
+    - Border: The outline around the element.
+    - Margin: Space outside the border.
